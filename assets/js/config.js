@@ -31,8 +31,9 @@ window.WEDDING = {
 
   // The invocation below the hero.
   blessing: {
-    shlok: "निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
-    meaning: "Remove all obstacles, O Lord, from every undertaking, always.",
+    shlok: "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+    meaning:
+      "O Lord with the curved trunk and mighty form, whose brilliance equals a crore suns — remove all obstacles from every undertaking, always.",
   },
 
   hero: {

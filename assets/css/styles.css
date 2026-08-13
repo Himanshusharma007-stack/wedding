@@ -982,15 +982,16 @@ h1, h2, h3, h4, .std__note, .story-art figcaption, .person__parents, .band__inne
 }
 .blessing__shlok {
   margin: 0.4rem auto 0;
-  max-width: 32ch;
+  max-width: 28ch;
+  white-space: pre-line;
   font-family: var(--deva);
-  font-size: clamp(1.05rem, 0.85rem + 1vw, 1.6rem);
-  line-height: 1.85;
+  font-size: clamp(1.05rem, 0.85rem + 1vw, 1.55rem);
+  line-height: 1.9;
   color: var(--wine);
 }
 .blessing__meaning {
   margin: 0.9rem auto 0;
-  max-width: 44ch;
+  max-width: 48ch;
   text-wrap: balance;
   font-family: var(--display);
   font-style: italic;
