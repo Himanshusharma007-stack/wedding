@@ -244,12 +244,12 @@ h1, h2, h3, h4, p { margin: 0; }
 .cover__date-link {
   font-family: var(--f-display);
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: clamp(1.28rem, 3.8vw, 1.45rem);
   line-height: 1.35;
-  color: rgba(239, 220, 174, 0.9);
+  color: rgba(239, 220, 174, 0.92);
   text-decoration: none;
   border-bottom: 1px solid rgba(217, 187, 115, 0.4);
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 .cover__date-link:hover {
@@ -257,8 +257,8 @@ h1, h2, h3, h4, p { margin: 0; }
   border-bottom-color: #fff6e3;
 }
 .cover__date-link--sub {
-  font-size: 1.05rem;
-  color: rgba(239, 220, 174, 0.85);
+  font-size: clamp(1.15rem, 3.2vw, 1.28rem);
+  color: rgba(239, 220, 174, 0.88);
   border-bottom-color: rgba(217, 187, 115, 0.3);
 }
 .cover__date-link--sub:hover {
@@ -1202,6 +1202,7 @@ h1, h2, h3, h4, p { margin: 0; }
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px 28px;
+  font-size: 0.78rem;
   color: var(--gold-light);
 }
 .footer__date a {
