@@ -170,5 +170,5 @@ window.WEDDING = {
   ],
 
   hashtag: "#HimanshuWedsSaloni",
-  siteUrl: "",
+  siteUrl: "https://himanshusharma007-stack.github.io/wedding/",
 };
