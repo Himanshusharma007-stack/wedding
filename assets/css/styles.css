@@ -235,11 +235,35 @@ h1, h2, h3, h4, p { margin: 0; }
   color: var(--gold-light);
 }
 .cover__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.cover__date-link {
   font-family: var(--f-display);
   font-style: italic;
   font-size: 1.2rem;
+  line-height: 1.35;
   color: rgba(239, 220, 174, 0.9);
-  margin-bottom: 36px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(217, 187, 115, 0.4);
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.cover__date-link:hover {
+  color: #fff6e3;
+  border-bottom-color: #fff6e3;
+}
+.cover__date-link--sub {
+  font-size: 1.05rem;
+  color: rgba(239, 220, 174, 0.85);
+  border-bottom-color: rgba(217, 187, 115, 0.3);
+}
+.cover__date-link--sub:hover {
+  color: #fff6e3;
+  border-bottom-color: #fff6e3;
 }
 
 @keyframes seal-in {
