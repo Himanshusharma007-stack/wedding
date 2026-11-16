@@ -53,12 +53,6 @@ window.WEDDING = {
         "Work chats turned into lunch, lunch turned into evenings, and evenings turned into the kind of conversations that run well past midnight. Somewhere in there we stopped being just colleagues.",
     },
     {
-      date: "The decision",
-      title: "A very easy yes",
-      text:
-        "There was no grand plan. We simply realised we were describing the same life, so we decided to build it together — and our families were delighted to agree.",
-    },
-    {
       date: "2 December 2026",
       title: "Forever, officially",
       text:
