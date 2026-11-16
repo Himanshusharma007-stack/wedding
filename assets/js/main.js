@@ -549,12 +549,17 @@
   }
 
   function initActions() {
-    // Footer place links follow the config, so a changed map link updates everywhere.
+    // Footer & cover place links follow the config, so a changed map link updates everywhere.
     var footerWedding = $("#footerWedding");
     var reception = events.filter(function (ev) { return ev.venue && ev.mapUrl; })[0];
     var footerReception = $("#footerReception");
     if (footerWedding) footerWedding.href = venueLink;
     if (footerReception && reception) footerReception.href = reception.mapUrl;
+
+    var coverWedding = $("#coverWedding");
+    var coverReception = $("#coverReception");
+    if (coverWedding) coverWedding.href = venueLink;
+    if (coverReception && reception) coverReception.href = reception.mapUrl;
 
     var shaadi = events.filter(function (ev) { return ev.highlight; })[0] ||
       { name: "Wedding", start: "", instant: weddingDate, hours: 6 };
