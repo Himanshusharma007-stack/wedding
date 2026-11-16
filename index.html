@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Himanshu &amp; Saloni · 2 December 2026</title>
-<meta name="description" content="Himanshu and Saloni are getting married on 2 December 2026 at Comfort Inn Shubhra, Ghazipur. Save the date and join us for the celebrations." />
-<meta name="theme-color" content="#1b2a5e" />
+<title>Himanshu &amp; Saloni · 1–2 December 2026</title>
+<meta name="description" content="Himanshu and Saloni are getting married on 2 December 2026 at Comfort Inn Shubhra, Ghazipur. Join us for the Mehendi, Sangeet, Haldi and Shaadi, and the Reception in Muzaffarnagar on 5 December." />
+<meta name="theme-color" content="#5a1520" />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Himanshu &amp; Saloni · 2 December 2026" />
-<meta property="og:description" content="Together with our families, we invite you to celebrate our wedding." />
+<meta property="og:title" content="Himanshu &amp; Saloni · 1–2 December 2026" />
+<meta property="og:description" content="Together with our families, we invite you to celebrate our wedding in Ghazipur." />
 <meta property="og:image" content="assets/img/couple.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -17,133 +17,160 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Marcellus&family=Parisienne&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="assets/css/styles.css" />
+<script>document.documentElement.className = "js";</script>
 </head>
 <body>
 
-<!-- ── Loader ─────────────────────────────────────────────── -->
-<div class="loader" id="loader">
-  <div class="loader__inner">
-    <svg class="loader__ring" viewBox="0 0 120 120" aria-hidden="true">
-      <circle cx="60" cy="60" r="54" />
-    </svg>
-    <span class="loader__monogram">H<em>&amp;</em>S</span>
+<!-- ── Envelope ───────────────────────────────────────────── -->
+<div class="cover" id="cover">
+  <div class="cover__inner">
+    <p class="cover__shubh" lang="hi">॥ शुभ विवाह ॥</p>
+    <div class="seal" aria-hidden="true"><span>H<em>&amp;</em>S</span></div>
+    <p class="cover__eyebrow">You are cordially invited to the wedding of</p>
+    <p class="cover__names">Himanshu <em>&amp;</em> Saloni</p>
+    <p class="cover__date">1 – 2 December 2026 &nbsp;·&nbsp; Ghazipur</p>
+    <button class="btn btn--gold" id="openInvite" type="button">Open the invitation</button>
   </div>
 </div>
-
-<div class="petals" id="petals" aria-hidden="true"></div>
-<div class="progress" id="progress" aria-hidden="true"><i></i></div>
 
 <!-- ── Navigation ─────────────────────────────────────────── -->
 <header class="nav" id="nav">
   <div class="nav__bar">
-    <a href="#home" class="nav__brand" data-scroll>
-      <span class="nav__brand-mark">H<em>&amp;</em>S</span>
-    </a>
+    <a href="#home" class="nav__brand">H<em>&amp;</em>S</a>
 
     <nav class="nav__links" id="navLinks" aria-label="Main">
-      <a href="#couple" data-scroll>The Couple</a>
-      <a href="#story" data-scroll>Our Story</a>
-      <a href="#events" data-scroll>Celebrations</a>
-      <a href="#venue" data-scroll>Travel</a>
-      <a href="#gallery" data-scroll>Gallery</a>
-      <a href="#faq" data-scroll>FAQ</a>
-      <a href="#invitation" class="nav__cta" data-scroll>Invitation</a>
+      <a href="#events">Celebrations</a>
+      <a href="#couple">The Couple</a>
+      <a href="#venue">Venue</a>
+      <a href="#story">Our Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#rsvp">RSVP</a>
     </nav>
 
-    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
+    <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
     </button>
   </div>
 </header>
 
 <main>
 
-<!-- ── Hero ───────────────────────────────────────────────── -->
+<!-- ── The invitation card ────────────────────────────────── -->
 <section class="hero" id="home">
-  <div class="hero__art" aria-hidden="true"></div>
-  <div class="hero__veil" aria-hidden="true"></div>
-
-  <div class="hero__content">
-    <p class="hero__kicker reveal" id="heroKicker">Together with our families</p>
-
-    <h1 class="hero__names">
-      <span class="hero__name reveal" style="--d:.1s">Himanshu</span>
-      <span class="hero__amp reveal" style="--d:.25s">&amp;</span>
-      <span class="hero__name reveal" style="--d:.4s">Saloni</span>
-    </h1>
-
-    <p class="hero__tagline reveal" style="--d:.55s" id="heroTagline">are getting married</p>
-
-    <div class="hero__meta reveal" style="--d:.7s">
-      <span id="heroDate">Wednesday, 2 December 2026</span>
-      <i class="dot" aria-hidden="true"></i>
-      <span id="heroPlace">Ghazipur, Uttar Pradesh</span>
-    </div>
-
-    <div class="countdown reveal" style="--d:.85s" id="countdown" aria-live="polite">
-      <div class="countdown__unit"><b data-cd="days">--</b><span>Days</span></div>
-      <div class="countdown__unit"><b data-cd="hours">--</b><span>Hours</span></div>
-      <div class="countdown__unit"><b data-cd="minutes">--</b><span>Minutes</span></div>
-      <div class="countdown__unit"><b data-cd="seconds">--</b><span>Seconds</span></div>
-    </div>
-
-    <div class="hero__actions reveal" style="--d:1s">
-      <a href="#invitation" class="btn btn--solid" data-scroll>Open the invitation</a>
-      <button class="btn btn--ghost" id="saveDateBtn">Save the date</button>
-    </div>
+  <div class="hero__decor" aria-hidden="true">
+    <div class="hero__mandala"></div>
+    <div class="hero__toran"></div>
+    <span class="strand" style="--x:3%;--h:44vh;--d:0s"></span>
+    <span class="strand" style="--x:7.5%;--h:60vh;--d:-1.4s"></span>
+    <span class="strand" style="--x:12%;--h:34vh;--d:-2.6s"></span>
+    <span class="strand strand--r" style="--x:3%;--h:44vh;--d:-0.8s"></span>
+    <span class="strand strand--r" style="--x:7.5%;--h:60vh;--d:-2s"></span>
+    <span class="strand strand--r" style="--x:12%;--h:34vh;--d:-3.1s"></span>
   </div>
 
-  <a href="#blessing" class="hero__scroll" data-scroll aria-label="Scroll to content">
-    <span></span>
-  </a>
+  <article class="card card--invite reveal">
+    <div class="card__arch" aria-hidden="true"></div>
+    <span class="corner corner--tl" aria-hidden="true"></span>
+    <span class="corner corner--tr" aria-hidden="true"></span>
+    <span class="corner corner--bl" aria-hidden="true"></span>
+    <span class="corner corner--br" aria-hidden="true"></span>
+
+    <div class="invite">
+      <img class="invite__ganesha" src="assets/img/ganesha.jpg" alt="Lord Ganesha" width="900" height="900" />
+      <p class="invite__shlok" lang="sa" id="blessingShlok">
+        वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br />
+        निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+      </p>
+
+      <div class="rule" aria-hidden="true"><i></i></div>
+
+      <p class="label" id="inviteEyebrow">With the blessings of our families</p>
+      <p class="invite__hosts" id="inviteOpening">Mr. &amp; Mrs. Sharma and Mr. &amp; Mrs. Yadav</p>
+      <p class="invite__request" id="inviteRequest">request the pleasure of your company at the marriage of their children</p>
+
+      <h1 class="invite__names">
+        <span id="groomName">Himanshu</span>
+        <em aria-hidden="true">&amp;</em>
+        <span id="brideName">Saloni</span>
+      </h1>
+
+      <div class="datebar" id="datebar" aria-label="Wednesday, 2 December 2026">
+        <span class="datebar__side" data-date="weekday">Wednesday</span>
+        <span class="datebar__day">
+          <small data-date="month">December</small>
+          <b data-date="day">02</b>
+          <small data-date="year">2026</small>
+        </span>
+        <span class="datebar__side" data-date="time">8:00 PM</span>
+      </div>
+
+      <p class="invite__venue">
+        <span id="inviteVenue">Comfort Inn Shubhra</span>
+        <small id="inviteAddress">Mahuabagh, Ghazipur, Uttar Pradesh 233001</small>
+      </p>
+
+      <ul class="invite__also" id="inviteAlso"></ul>
+
+      <div class="countdown" id="countdown" aria-live="off">
+        <div><b data-cd="days">--</b><span>Days</span></div>
+        <div><b data-cd="hours">--</b><span>Hours</span></div>
+        <div><b data-cd="minutes">--</b><span>Minutes</span></div>
+        <div><b data-cd="seconds">--</b><span>Seconds</span></div>
+      </div>
+
+      <div class="actions">
+        <a href="#events" class="btn btn--solid">See the celebrations</a>
+        <button class="btn btn--ghost" id="saveDateBtn" type="button">Add to calendar</button>
+      </div>
+
+      <p class="invite__footnote" id="inviteFootnote">Your presence is the only gift we ask for.</p>
+    </div>
+  </article>
 </section>
 
-<!-- ── Invocation ─────────────────────────────────────────── -->
-<section class="blessing" id="blessing" aria-label="Invocation">
-  <div class="wrap">
-    <figure class="blessing__art reveal">
-      <img src="assets/img/ganesha.jpg" alt="Illustration of Lord Ganesha" width="900" height="900" />
-    </figure>
-    <p class="blessing__shlok reveal" lang="sa" id="blessingShlok">
-      वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br />
-      निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
-    </p>
-    <p class="blessing__meaning reveal" id="blessingMeaning">
-      O Lord with the curved trunk and mighty form, whose brilliance equals a crore suns — remove all obstacles from every undertaking, always.
-    </p>
-  </div>
-</section>
-
-<!-- ── The Couple ─────────────────────────────────────────── -->
-<section class="section section--cream" id="couple">
+<!-- ── Celebrations ───────────────────────────────────────── -->
+<section class="section section--paper" id="events">
   <div class="wrap">
     <header class="sec-head reveal">
-      <p class="sec-head__eyebrow">Two hearts, one story</p>
+      <p class="label">Three days &nbsp;·&nbsp; Five celebrations</p>
+      <h2 class="sec-head__title">The Celebrations</h2>
+      <div class="rule" aria-hidden="true"><i></i></div>
+    </header>
+
+    <div class="days" id="eventDays"></div>
+
+    <div class="actions actions--center reveal">
+      <button class="btn btn--solid" id="saveAllBtn" type="button">Add all to my calendar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── The couple ─────────────────────────────────────────── -->
+<section class="section" id="couple">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="label">Two hearts, one story</p>
       <h2 class="sec-head__title">The Couple</h2>
-      <div class="ornament" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
+      <div class="rule" aria-hidden="true"><i></i></div>
     </header>
 
     <div class="couple">
-      <article class="person reveal">
-        <div class="person__frame">
-          <img src="assets/img/himanshu.jpg" alt="Illustrated portrait of Himanshu" loading="lazy" width="900" height="900" />
-        </div>
-        <p class="person__role">The Groom</p>
+      <article class="person reveal" data-person="groom">
+        <div class="person__frame"><img src="assets/img/himanshu.jpg" alt="Portrait of Himanshu" loading="lazy" width="900" height="900" /></div>
+        <p class="label person__role">The Groom</p>
         <h3 class="person__name">Himanshu</h3>
         <p class="person__parents">Son of Mr. &amp; Mrs. Sharma</p>
         <p class="person__blurb"></p>
       </article>
 
-      <div class="couple__amp reveal" aria-hidden="true">&amp;</div>
+      <div class="couple__amp" aria-hidden="true">&amp;</div>
 
-      <article class="person reveal">
-        <div class="person__frame">
-          <img src="assets/img/saloni.jpg" alt="Illustrated portrait of Saloni" loading="lazy" width="900" height="900" />
-        </div>
-        <p class="person__role">The Bride</p>
+      <article class="person reveal" data-person="bride">
+        <div class="person__frame"><img src="assets/img/saloni.jpg" alt="Portrait of Saloni" loading="lazy" width="900" height="900" /></div>
+        <p class="label person__role">The Bride</p>
         <h3 class="person__name">Saloni</h3>
         <p class="person__parents">Daughter of Mr. &amp; Mrs. Yadav</p>
         <p class="person__blurb"></p>
@@ -152,170 +179,81 @@
   </div>
 </section>
 
-<!-- ── Quote band ─────────────────────────────────────────── -->
-<section class="band">
-  <div class="wrap band__inner reveal">
-    <svg class="band__quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H5a2 2 0 0 0-2 2v4h4v4H3v-2m14-8h-4a2 2 0 0 0-2 2v4h4v4h-4v-2"/></svg>
-    <p>“I have found the one whom my soul loves.”</p>
-    <span>— and we would love for you to watch us say so</span>
+<!-- ── Venue ──────────────────────────────────────────────── -->
+<section class="section section--paper" id="venue">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="label">Finding your way</p>
+      <h2 class="sec-head__title">Venue &amp; Travel</h2>
+      <div class="rule" aria-hidden="true"><i></i></div>
+    </header>
+
+    <div class="card venue reveal">
+      <div class="venue__map">
+        <iframe id="venueMap" title="Map to the wedding venue" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="venue__info">
+        <p class="label">Wedding celebrations at</p>
+        <h3 class="venue__name" id="venueName">Comfort Inn Shubhra</h3>
+        <p class="venue__address" id="venueAddress">Mahuabagh, Ghazipur, Uttar Pradesh 233001</p>
+        <a class="btn btn--solid" id="venueDirections" href="#" target="_blank" rel="noopener">Get directions</a>
+        <ul class="venue__notes" id="venueNotes"></ul>
+      </div>
+    </div>
+
+    <div class="venue-extra" id="otherVenues"></div>
   </div>
 </section>
 
-<!-- ── Our Story ──────────────────────────────────────────── -->
+<!-- ── Our story ──────────────────────────────────────────── -->
 <section class="section" id="story">
   <div class="wrap">
     <header class="sec-head reveal">
-      <p class="sec-head__eyebrow">How we got here</p>
+      <p class="label">How we got here</p>
       <h2 class="sec-head__title">Our Story</h2>
-      <div class="ornament" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
+      <div class="rule" aria-hidden="true"><i></i></div>
     </header>
 
-    <div class="story-grid">
-      <ol class="timeline" id="timeline"></ol>
-      <figure class="story-art reveal">
-        <img src="assets/img/couple-walking.jpg" alt="Illustration of the couple walking hand in hand under festival lights" loading="lazy" width="1400" height="1050" />
-        <figcaption>Onwards, together.</figcaption>
-      </figure>
+    <div class="actions reveal">
+      <button class="btn btn--ghost story__toggle" id="storyToggle" type="button" aria-expanded="false" aria-controls="storyBody">Read our story</button>
     </div>
-  </div>
-</section>
 
-<!-- ── Events ─────────────────────────────────────────────── -->
-<section class="section section--deep" id="events">
-  <div class="wrap">
-    <header class="sec-head sec-head--light reveal">
-      <p class="sec-head__eyebrow">Save these days</p>
-      <h2 class="sec-head__title">The Celebrations</h2>
-      <div class="ornament ornament--light" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
-    </header>
-
-    <div class="events" id="events-grid"></div>
-  </div>
-</section>
-
-<!-- ── Save the date band ─────────────────────────────────── -->
-<section class="std">
-  <div class="wrap std__inner reveal">
-    <p class="std__eyebrow">Mark your calendar</p>
-    <h2 class="std__date"><span>02</span><i>·</i><span>12</span><i>·</i><span>26</span></h2>
-    <p class="std__note" id="stdCounter">Counting down to the big day</p>
-    <div class="std__actions">
-      <button class="btn btn--solid" id="saveDateBtn2">Add to calendar</button>
-      <button class="btn btn--ghost" id="shareBtn">Share the news</button>
-    </div>
-  </div>
-</section>
-
-<!-- ── Venue &amp; travel ────────────────────────────────────── -->
-<section class="section section--cream" id="venue">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <p class="sec-head__eyebrow">Finding your way</p>
-      <h2 class="sec-head__title">Venue &amp; Travel</h2>
-      <div class="ornament" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
-    </header>
-
-    <div class="venue">
-      <div class="venue__map reveal">
-        <iframe id="venueMap" title="Map to the wedding venue" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-      <div class="venue__info reveal">
-        <h3 id="venueName">Comfort Inn Shubhra</h3>
-        <p class="venue__address" id="venueAddress">Mahuabagh, Ghazipur, Uttar Pradesh 233001</p>
-        <a class="btn btn--solid btn--sm" id="venueDirections" href="#" target="_blank" rel="noopener">Get directions</a>
-        <ul class="venue__notes" id="venueNotes"></ul>
+    <div class="collapse" id="storyBody">
+      <div class="collapse__inner">
+        <div class="story">
+          <figure class="story__art reveal">
+            <img src="assets/img/couple-walking.jpg" alt="The couple walking hand in hand under festival lights" loading="lazy" width="1400" height="1050" />
+          </figure>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── Gallery ────────────────────────────────────────────── -->
-<section class="section" id="gallery">
+<section class="section section--paper" id="gallery">
   <div class="wrap">
     <header class="sec-head reveal">
-      <p class="sec-head__eyebrow">A few of our favourites</p>
+      <p class="label">A few of our favourites</p>
       <h2 class="sec-head__title">Gallery</h2>
-      <div class="ornament" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
+      <div class="rule" aria-hidden="true"><i></i></div>
     </header>
-    <div class="gallery" id="gallery-grid"></div>
-    <p class="gallery__hashtag reveal">Tag your photos with <b id="hashtag">#HimanshuWedsSaloni</b></p>
+    <div class="gallery" id="galleryGrid"></div>
   </div>
 </section>
 
-<!-- ── The invitation ─────────────────────────────────────── -->
-<section class="section section--deep section--invite" id="invitation">
-  <div class="wrap wrap--narrow">
-    <article class="invite reveal">
-      <div class="invite__paper">
-        <span class="invite__corner invite__corner--tl" aria-hidden="true"></span>
-        <span class="invite__corner invite__corner--tr" aria-hidden="true"></span>
-        <span class="invite__corner invite__corner--bl" aria-hidden="true"></span>
-        <span class="invite__corner invite__corner--br" aria-hidden="true"></span>
-
-        <svg class="invite__crest" viewBox="0 0 64 44" aria-hidden="true">
-          <circle cx="26" cy="27" r="13" />
-          <circle cx="38" cy="27" r="13" />
-          <path d="M32 3l3.4 5.6L32 14.2l-3.4-5.6z" class="invite__crest-gem" />
-          <path d="M14 8c4 1.5 6.5 3.8 8 6.6M50 8c-4 1.5-6.5 3.8-8 6.6" />
-        </svg>
-
-        <p class="invite__eyebrow" id="inviteEyebrow">With the blessings of our families</p>
-        <p class="invite__opening" id="inviteOpening"></p>
-        <p class="invite__request" id="inviteRequest"></p>
-
-        <h2 class="invite__names">
-          <span>Himanshu</span>
-          <em aria-hidden="true">&amp;</em>
-          <span>Saloni</span>
-        </h2>
-
-        <div class="flourish" aria-hidden="true">
-          <svg viewBox="0 0 240 20">
-            <path d="M6 10c26 0 40-6 60-6s26 6 44 6" />
-            <path d="M234 10c-26 0-40 6-60 6s-26-6-44-6" />
-            <path d="M120 4.5 124.5 10 120 15.5 115.5 10Z" class="flourish__gem" />
-          </svg>
-        </div>
-
-        <dl class="invite__details">
-          <div>
-            <dt>On</dt>
-            <dd id="inviteDate">Wednesday, 2 December 2026</dd>
-            <dd class="invite__time" id="inviteTime">Nine o'clock in the evening</dd>
-          </div>
-          <div>
-            <dt>At</dt>
-            <dd id="inviteVenue">Comfort Inn Shubhra</dd>
-            <dd class="invite__place" id="inviteAddress">Mahuabagh, Ghazipur</dd>
-          </div>
-        </dl>
-
-        <p class="invite__closing" id="inviteClosing">Dinner and dancing to follow</p>
-
-        <ul class="invite__also" id="inviteAlso"></ul>
-
-        <div class="invite__actions">
-          <button class="btn btn--solid btn--sm" id="saveDateBtn3">Add to calendar</button>
-          <a class="btn btn--ghost btn--sm" id="inviteDirections" href="#" target="_blank" rel="noopener">Get directions</a>
-        </div>
-
-        <p class="invite__footnote" id="inviteFootnote">Your presence is the only gift we ask for.</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ── RSVP · hidden unless rsvp.enabled is true in config.js ─ -->
-<section class="section section--deep" id="rsvp">
+<!-- ── RSVP · shown only when rsvp.enabled is true in config.js ─ -->
+<section class="section section--maroon" id="rsvp">
   <div class="wrap wrap--narrow">
     <header class="sec-head sec-head--light reveal">
-      <p class="sec-head__eyebrow">We are saving you a seat</p>
+      <p class="label">We are saving you a seat</p>
       <h2 class="sec-head__title">RSVP</h2>
-      <div class="ornament ornament--light" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
+      <div class="rule" aria-hidden="true"><i></i></div>
       <p class="sec-head__lede" id="rsvpDeadline">Kindly respond by 1 November 2026</p>
     </header>
 
-    <form class="form reveal" id="rsvpForm" novalidate>
+    <form class="card form reveal" id="rsvpForm" novalidate>
       <div class="field">
         <label for="rsvpName">Your name <span aria-hidden="true">*</span></label>
         <input id="rsvpName" name="name" type="text" autocomplete="name" required placeholder="As it appears on your invitation" />
@@ -338,14 +276,8 @@
       <fieldset class="field">
         <legend>Will you be joining us?</legend>
         <div class="choice">
-          <label class="choice__opt">
-            <input type="radio" name="attending" value="Joyfully accepts" checked />
-            <span>Joyfully accepts</span>
-          </label>
-          <label class="choice__opt">
-            <input type="radio" name="attending" value="Regretfully declines" />
-            <span>Regretfully declines</span>
-          </label>
+          <label class="choice__opt"><input type="radio" name="attending" value="Joyfully accepts" checked /><span>Joyfully accepts</span></label>
+          <label class="choice__opt"><input type="radio" name="attending" value="Regretfully declines" /><span>Regretfully declines</span></label>
         </div>
       </fieldset>
 
@@ -381,44 +313,35 @@
   </div>
 </section>
 
-<!-- ── FAQ ────────────────────────────────────────────────── -->
-<section class="section section--cream" id="faq">
-  <div class="wrap wrap--narrow">
-    <header class="sec-head reveal">
-      <p class="sec-head__eyebrow">Good to know</p>
-      <h2 class="sec-head__title">Questions</h2>
-      <div class="ornament" aria-hidden="true"><i></i><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.4-9A5.3 5.3 0 0 1 12 6.9 5.3 5.3 0 0 1 21.4 12c-1.9 4.3-9.4 9-9.4 9z"/></svg><i></i></div>
-    </header>
-    <div class="faq" id="faq-list"></div>
-
-    <div class="contacts reveal" id="contacts">
-      <p>Still stuck? Call the people who know everything.</p>
-      <div class="contacts__list" id="contactsList"></div>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <!-- ── Footer ─────────────────────────────────────────────── -->
 <footer class="footer">
   <div class="wrap footer__inner">
-    <div class="footer__monogram">H<em>&amp;</em>S</div>
-    <p class="footer__date">2 · 12 · 2026</p>
+    <div class="seal seal--small" aria-hidden="true"><span>H<em>&amp;</em>S</span></div>
+    <p class="footer__names">Himanshu <em>&amp;</em> Saloni</p>
+    <p class="label footer__date">
+      <a id="footerWedding" href="https://maps.app.goo.gl/vDQSmERSN2DxDpsEA" target="_blank" rel="noopener">1 – 2 December 2026 &nbsp;·&nbsp; Ghazipur</a>
+      <a id="footerReception" href="https://maps.app.goo.gl/VL7eyRRV9aBMUQCd9" target="_blank" rel="noopener">5 December 2026 &nbsp;·&nbsp; Muzaffarnagar</a>
+    </p>
     <p class="footer__thanks">Thank you for being part of our story.</p>
-    <p class="footer__credit">Made with love, in anticipation of a very good day.</p>
+    <div class="contacts">
+      <p class="label">Questions? We are a call away</p>
+      <div class="contacts__list" id="contactsList"></div>
+    </div>
+    <button class="btn btn--gold" id="shareBtn" type="button">Share the invitation</button>
   </div>
 </footer>
 
 <!-- ── Lightbox ───────────────────────────────────────────── -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
-  <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
-  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+  <button class="lightbox__close" id="lbClose" type="button" aria-label="Close">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Previous image">&#8249;</button>
   <figure class="lightbox__figure">
     <img id="lbImage" src="" alt="" />
     <figcaption id="lbCaption"></figcaption>
   </figure>
-  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next image">&#8250;</button>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Next image">&#8250;</button>
 </div>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>

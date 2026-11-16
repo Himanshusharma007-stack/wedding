@@ -7,16 +7,14 @@ dependencies, no framework: open `index.html` and it works.
 
 | Section | What it does |
 | --- | --- |
-| Hero | Names, date, and a live countdown to the ceremony |
+| Envelope | A maroon cover with a gold seal; guests tap “Open the invitation” (skipped on deep links like `#venue`) |
+| Invitation card | On a maroon backdrop with a gold mandala and marigold garlands: Ganesha, the shloka, both families, names, date, venue, the reception line and a live countdown |
 | The Couple | Illustrated portraits of Himanshu and Saloni |
 | Our Story | A four-step timeline of how you got here |
-| Celebrations | A card per function with date, venue, dress code and a map link |
-| Invocation | Ganesha and the shloka, straight after the hero (`blessing` in `config.js`) |
-| Save the date | Downloads a `.ics` calendar invite and shares the link |
-| Venue &amp; Travel | Embedded map, directions, and travel notes |
-| Gallery | Click any image for a full-screen viewer (arrow keys work) |
-| Invitation | The formal invitation card, with the other functions noted below it |
-| FAQ | Expandable answers plus tap-to-call contacts |
+| Celebrations | Grouped by day, one card per function with time, map and its own calendar invite, plus “add all four” |
+| Venue &amp; Travel | Embedded map, directions and travel notes, plus a separate block for the reception venue |
+| Footer | Tap-to-call contacts and a share button |
+| Gallery | A fixed seven-photo mosaic of mounted prints; click any image for a full-screen viewer (arrow keys work) |
 
 The RSVP form is built but switched off. Set `rsvp.enabled` to `true` in `config.js` to bring
 it back; while it is `false` the section and its nav link are removed from the page entirely.
@@ -34,10 +32,13 @@ python3 -m http.server 4321
 ## Editing your details
 
 Everything you are likely to change lives in **`assets/js/config.js`** — names, dates, venues,
-story text, FAQ answers, phone numbers, the hashtag. Nothing in the HTML needs to be touched.
+story text, phone numbers, the hashtag. Nothing in the HTML needs to be touched.
 
-The real details are already in place: Comfort Inn Shubhra in Ghazipur, the three functions
-(Sangeet on 1 December, Haldi and the Marriage on 2 December), and both your phone numbers.
+The real details are already in place: Comfort Inn Shubhra in Ghazipur, the four functions
+(Mehendi 10 AM and Sangeet 6 PM on 1 December, Haldi 10 AM and Shaadi 8 PM on 2 December),
+and both your phone numbers. The Reception (5 December, 12 PM, at residence in Muzaffarnagar)
+has its own `venue`, `address` and `mapUrl`, and `showOnInvitation: true` adds it to the main card. Event times are India time (`start: "2026-12-01T10:00"`), so the
+countdown and calendar invites are correct for guests abroad too.
 
 Things still worth a look before you send the link out:
 
@@ -48,7 +49,7 @@ Things still worth a look before you send the link out:
 3. **`venue.notes`** — the travel guidance (Ghazipur City station, Varanasi airport) is a
    sensible default; correct the distances if you know better.
 4. **`rsvp.deadline`** — set to 1 November 2026 at the moment.
-5. **`weddingDate`** — drives the countdown and the calendar invite, set to 2 December at 9 PM.
+5. **`weddingDate`** — drives the countdown and the date on the card, set to 2 December at 8 PM.
    `month` is 1-based.
 
 ### How the maps work
@@ -92,26 +93,28 @@ filenames and they will appear everywhere automatically:
 | `himanshu.jpg` | Groom portrait, gallery |
 | `saloni.jpg` | Bride portrait, gallery |
 | `couple.jpg` | Gallery, social share preview |
-| `couple-walking.jpg` | Story section, save-the-date background |
-| `floral-arch.jpg` | Hero background |
-| `ganesha.jpg` | The invocation below the hero |
+| `couple-walking.jpg` | Story section |
+| `floral-arch.jpg` | Floral arch at the top of the invitation card |
+| `ganesha.jpg` | Ganesha on the invitation card |
 | `event-sangeet.jpg` | Sangeet card |
 | `event-haldi.jpg` | Haldi card |
-| `event-mandap.jpg` | Marriage card |
+| `event-mandap.jpg` | Shaadi card |
 | `gallery-baraat.jpg` | Gallery |
-| `gallery-mehndi.jpg` | Gallery |
+| `gallery-mehndi.jpg` | Mehendi card, gallery |
 | `gallery-diyas.jpg` | Gallery |
+| `mandala.svg`, `toran.svg` | Gold mandala and marigold garland behind the invitation card |
 
 The Ganesha painting is on ivory paper and is blended into the page rather than cropped, so
 if you swap it, keep a light background and it will sit on the section the same way.
 
-To add more gallery photos, drop them in `assets/img/` and add an entry to the `gallery` array
-in `config.js`.
+The gallery layout is designed for exactly seven photos, in the order they appear in the `gallery`
+array (the first is the large feature, the third is the tall one). Swap images freely; if you add
+more than seven, the extras flow on below the mosaic.
 
 ## Notes
 
 - Fonts load from Google Fonts, so the first view needs a connection; the site degrades to
   system serifs offline.
-- Respects `prefers-reduced-motion` — the falling petals and scroll animations turn off for
-  guests who ask for that.
+- Respects `prefers-reduced-motion` — the envelope and scroll animations turn off for guests
+  who ask for that.
 - Works down to small phones, and prints reasonably if someone wants a paper copy.

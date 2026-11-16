@@ -26,19 +26,15 @@ window.WEDDING = {
     },
   },
 
-  // The main wedding ceremony. Month is 1-based. Time is 24h, local.
-  weddingDate: { year: 2026, month: 12, day: 2, hour: 21, minute: 0 },
+  // The Shaadi itself. Month is 1-based. Time is 24h, India time (IST).
+  weddingDate: { year: 2026, month: 12, day: 2, hour: 20, minute: 0 },
 
-  // The invocation below the hero.
+  // The invocation at the top of the invitation card.
   blessing: {
     shlok: "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
-    meaning:
-      "O Lord with the curved trunk and mighty form, whose brilliance equals a crore suns — remove all obstacles from every undertaking, always.",
   },
 
   hero: {
-    kicker: "Together with our families",
-    tagline: "are getting married",
     dateLabel: "Wednesday, 2 December 2026",
     placeLabel: "Ghazipur, Uttar Pradesh",
   },
@@ -70,41 +66,50 @@ window.WEDDING = {
     },
   ],
 
-  // Every function happens at the venue below, so they share its map link.
+  // Every function happens at the venue below unless an event sets its own
+  // `venue`, `address` and `mapUrl`. `showOnInvitation` adds a line for that
+  // event to the main invitation card. `start` is local time in India (IST),
+  // written as "YYYY-MM-DDTHH:MM". `hours` is used for the calendar invite.
   events: [
     {
+      name: "Mehendi",
+      image: "assets/img/gallery-mehndi.jpg",
+      start: "2026-12-01T10:00",
+      hours: 4,
+      note: "Henna, music, chai and a long, lazy morning of stories.",
+    },
+    {
       name: "Sangeet",
-      icon: "music",
       image: "assets/img/event-sangeet.jpg",
-      date: "Tuesday, 1 December 2026",
-      time: "8:00 PM onwards",
-      venue: "Comfort Inn Shubhra",
-      address: "Mahuabagh, Ghazipur",
+      start: "2026-12-01T18:00",
+      hours: 5,
       note: "Rehearsed performances, unrehearsed dancing, dinner well past midnight.",
-      dress: "Indo-western glam",
     },
     {
       name: "Haldi",
-      icon: "sun",
       image: "assets/img/event-haldi.jpg",
-      date: "Wednesday, 2 December 2026",
-      time: "10:00 AM onwards",
-      venue: "Comfort Inn Shubhra",
-      address: "Mahuabagh, Ghazipur",
+      start: "2026-12-02T10:00",
+      hours: 3,
       note: "Turmeric, marigolds and absolutely no clean clothes.",
-      dress: "Anything yellow",
     },
     {
-      name: "Marriage",
-      icon: "rings",
+      name: "Shaadi",
       image: "assets/img/event-mandap.jpg",
-      date: "Wednesday, 2 December 2026",
-      time: "9:00 PM onwards",
-      venue: "Comfort Inn Shubhra",
-      address: "Mahuabagh, Ghazipur",
+      start: "2026-12-02T20:00",
+      hours: 6,
       note: "The pheras, the promises, and the moment we have been counting down to.",
-      dress: "Traditional festive",
       highlight: true,
+    },
+    {
+      name: "Reception",
+      image: "assets/img/couple.jpg",
+      start: "2026-12-05T12:00",
+      hours: 4,
+      venue: "At Residence",
+      address: "Muzaffarnagar, Uttar Pradesh",
+      mapUrl: "https://maps.app.goo.gl/VL7eyRRV9aBMUQCd9",
+      note: "Lunch, blessings and one more celebration with family and friends, at home.",
+      showOnInvitation: true,
     },
   ],
 
@@ -113,7 +118,6 @@ window.WEDDING = {
     eyebrow: "With the blessings of our families",
     opening: "Mr. & Mrs. Sharma and Mr. & Mrs. Yadav",
     request: "request the pleasure of your company at the marriage of their children",
-    closing: "Dinner and dancing to follow",
     footnote: "Your presence is the only gift we ask for.",
   },
 
@@ -123,9 +127,8 @@ window.WEDDING = {
     mapQuery: "Comfort Inn Shubhra, Mahuabagh, Ghazipur, Uttar Pradesh 233001",
     // Used to drop the map pin exactly on the venue: "latitude,longitude".
     coords: "25.5795468,83.5760501",
-    // Opens turn-by-turn directions straight from wherever the guest is.
-    mapUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Comfort+Inn+Shubhra,+Mahuabagh,+Ghazipur,+Uttar+Pradesh+233001",
+    // Opened by "Get directions", every Ghazipur event's map link and the footer.
+    mapUrl: "https://maps.app.goo.gl/vDQSmERSN2DxDpsEA",
     notes: [
       {
         title: "Getting there",
@@ -135,12 +138,12 @@ window.WEDDING = {
       {
         title: "Where to stay",
         text:
-          "Every function is at Comfort Inn Shubhra, so staying at the venue is easiest. Tell us if you need a room and we will help you book one.",
+          "Every wedding function is at Comfort Inn Shubhra, so staying at the venue is easiest. Tell us if you need a room and we will help you book one.",
       },
       {
         title: "Parking",
         text:
-          "There is parking on site at the hotel for all three functions.",
+          "There is parking on site at the hotel for all four wedding functions.",
       },
     ],
   },
@@ -170,25 +173,6 @@ window.WEDDING = {
   contacts: [
     { name: "Himanshu", phone: "+91 84498 44583", email: "hishrma00@gmail.com" },
     { name: "Saloni", phone: "+91 83828 74045" },
-  ],
-
-  faq: [
-    {
-      q: "Can I bring a plus one?",
-      a: "Your invitation will mention the number of seats reserved for you. If you would like to bring someone extra, just ask us — we will try our best.",
-    },
-    {
-      q: "Are children welcome?",
-      a: "Absolutely. We love having little ones around, and there will be a quiet corner for them to retreat to on the wedding night.",
-    },
-    {
-      q: "What should I wear?",
-      a: "Each function has a suggested colour palette listed above. Indian festive wear is always a safe and very welcome choice.",
-    },
-    {
-      q: "Are you making a registry?",
-      a: "Your presence is genuinely the only gift we are asking for. If you insist, your blessings and a good dance floor showing will do nicely.",
-    },
   ],
 
   hashtag: "#HimanshuWedsSaloni",
