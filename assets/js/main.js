@@ -582,21 +582,27 @@
     if (!share) return;
     share.addEventListener("click", function () {
       var url = CFG.siteUrl || window.location.href.split("#")[0];
-      var text = CFG.couple.groom.firstName + " & " + CFG.couple.bride.firstName +
-        " are getting married on " + ((CFG.hero || {}).dateLabel || dayLabel(weddingParts)) + "!";
+      var groom = (CFG.couple && CFG.couple.groom ? CFG.couple.groom.firstName : "Himanshu");
+      var bride = (CFG.couple && CFG.couple.bride ? CFG.couple.bride.firstName : "Saloni");
+      var shareTitle = groom + " & " + bride + " · Wedding Invitation";
+      var shareMessage = "Together with our families, you are cordially invited to celebrate the wedding of " +
+        groom + " & " + bride + "!\n\n" +
+        "• 1 – 2 December 2026 · Ghazipur U.P.\n" +
+        "• 5 December 2026 · Muzaffarnagar U.P. (Reception)\n\n" +
+        url;
 
       if (navigator.share) {
-        navigator.share({ title: "You are invited", text: text, url: url }).catch(function () {});
+        navigator.share({ title: shareTitle, text: shareMessage, url: url }).catch(function () {});
         return;
       }
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(text + " " + url).then(
+        navigator.clipboard.writeText(shareMessage).then(
           function () { toast("Invitation link copied"); },
           function () { toast(url); }
         );
         return;
       }
-      window.open("https://wa.me/?text=" + encodeURIComponent(text + " " + url), "_blank");
+      window.open("https://wa.me/?text=" + encodeURIComponent(shareMessage), "_blank");
     });
   }
 
