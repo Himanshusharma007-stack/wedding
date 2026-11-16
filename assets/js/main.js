@@ -190,6 +190,8 @@
     setText("#brideName", (couple.bride || {}).firstName);
     setText("#inviteVenue", venue.name);
     setText("#inviteAddress", venue.address);
+    var venueLinkEl = $("#inviteVenueLink");
+    if (venueLinkEl) venueLinkEl.href = venueLink;
 
     var time = clockLabel(weddingParts);
     setText('[data-date="weekday"]', weekday(weddingParts));
@@ -207,12 +209,15 @@
     also.innerHTML = extras
       .map(function (ev) {
         var t = clockLabel(ev.parts);
+        var link = ev.mapUrl || (ev.venue ? mapsLink(ev.venue + " " + (ev.address || "")) : venueLink);
         return (
           "<li>" +
+          '<a class="invite__also-link" href="' + esc(link) + '" target="_blank" rel="noopener" title="Open event location in Google Maps">' +
           '<p class="label">' + esc(ev.name) + "</p>" +
           '<p class="invite__also-when">' + esc(dayLabel(ev.parts).replace(/ \d{4}$/, "")) +
           " &nbsp;·&nbsp; " + esc(t.clock + " " + t.meridiem) + "</p>" +
           '<p class="invite__also-where">' + esc([ev.venue, ev.address].filter(Boolean).join(", ")) + "</p>" +
+          "</a>" +
           "</li>"
         );
       })

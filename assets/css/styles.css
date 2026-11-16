@@ -578,18 +578,34 @@ h1, h2, h3, h4, p { margin: 0; }
   color: var(--maroon);
 }
 
-.invite__venue { margin-top: 26px; }
+.invite__venue {
+  display: block;
+  margin-top: 26px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+.invite__venue:hover span {
+  color: var(--maroon);
+}
+.invite__venue:hover small {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .invite__venue span {
   display: block;
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  transition: color 0.2s ease;
 }
 .invite__venue small {
   display: block;
   font-size: 1rem;
   font-style: italic;
   color: var(--ink-soft);
+  transition: color 0.2s ease;
 }
 
 .invite__also {
@@ -600,8 +616,40 @@ h1, h2, h3, h4, p { margin: 0; }
   border-top: 1px dashed var(--line);
 }
 .invite__also li + li { margin-top: 12px; }
-.invite__also-when { margin-top: 2px; font-size: 1.12rem; font-weight: 500; }
-.invite__also-where { font-style: italic; font-size: 1rem; color: var(--ink-soft); }
+.invite__also-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+.invite__also .label {
+  color: var(--maroon);
+  font-weight: 600;
+  font-size: 0.76rem;
+  letter-spacing: 0.26em;
+}
+.invite__also-when {
+  margin-top: 2px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--maroon);
+  transition: color 0.2s ease;
+}
+.invite__also-where {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+.invite__also-link:hover .invite__also-when {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.invite__also-link:hover .invite__also-where {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .countdown {
   display: grid;
@@ -1017,6 +1065,11 @@ h1, h2, h3, h4, p { margin: 0; }
   object-position: center 30%;
   border-radius: 1px;
   transition: transform 0.9s var(--ease);
+}
+.gallery__item img[src*="gallery-bench"],
+.gallery__item:nth-child(5) img,
+.gallery__item:nth-child(7) img {
+  object-position: center 72%;
 }
 .gallery__item:hover img { transform: scale(1.04); }
 .gallery__cap {

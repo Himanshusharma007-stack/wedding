@@ -150,12 +150,12 @@ window.WEDDING = {
 
   gallery: [
     { src: "assets/img/couple.jpg", caption: "Us, illustrated" },
-    { src: "assets/img/gallery-baraat.jpg", caption: "The baraat arrives" },
-    { src: "assets/img/himanshu.jpg", caption: "Himanshu" },
-    { src: "assets/img/gallery-mehndi.jpg", caption: "Mehndi, still drying" },
-    { src: "assets/img/saloni.jpg", caption: "Saloni" },
+    { src: "assets/img/gallery-rings-mountains.jpg", caption: "Promise in the hills" },
+    { src: "assets/img/gallery-walk.jpg", caption: "Walking together" },
+    { src: "assets/img/gallery-rings-mandir.jpg", caption: "Blessed beginnings" },
+    { src: "assets/img/gallery-bench-laugh.jpg", caption: "Laughter and stories" },
     { src: "assets/img/couple-walking.jpg", caption: "Under the lights" },
-    { src: "assets/img/gallery-diyas.jpg", caption: "Lamps for the evening" },
+    { src: "assets/img/gallery-bench-hug.jpg", caption: "Quiet moments together" },
   ],
 
   rsvp: {
