@@ -101,7 +101,7 @@ window.WEDDING = {
       hours: 4,
       venue: "At Residence",
       address: "Muzaffarnagar, Uttar Pradesh",
-      mapUrl: "https://maps.app.goo.gl/VL7eyRRV9aBMUQCd9",
+      mapUrl: "https://www.google.com/maps/dir/?api=1&destination=29.481293,77.717783",
       note: "Lunch, blessings and one more celebration with family and friends, at home.",
       showOnInvitation: true,
     },
@@ -122,7 +122,7 @@ window.WEDDING = {
     // Used to drop the map pin exactly on the venue: "latitude,longitude".
     coords: "25.5795468,83.5760501",
     // Opened by "Get directions", every Ghazipur event's map link and the footer.
-    mapUrl: "https://maps.app.goo.gl/vDQSmERSN2DxDpsEA",
+    mapUrl: "https://www.google.com/maps/dir/?api=1&destination=Comfort+Inn+Shubhra,+Mahuabagh,+Ghazipur,+Uttar+Pradesh+233001",
     notes: [
       {
         title: "Getting there",
